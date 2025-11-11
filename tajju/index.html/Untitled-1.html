@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateHub | Next-Gen Project Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">tajju</a>
+            <nav class="nav">
+                <ul class="nav-list" id="navList">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact" class="btn btn-secondary">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1>Launch Your Projects F.</h1>
+            <p class="subtitle">InnovateHub is the simplest, most powerful tool for tracking project progress, collaborating with your team, and achieving breakthroughs.</p>
+            <div class="cta-group">
+                <a href="#signup" class="btn btn-primary">Start Your Free Trial</a>
+                <a href="#demo" class="btn btn-tertiary">Watch a Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-tasks icon"></i>
+                    <h3>Intuitive Task Tracking</h3>
+                    <p>Assign tasks, set deadlines, and monitor completion rates with a beautiful, minimal interface.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users icon"></i>
+                    <h3>Seamless Collaboration</h3>
+                    <p>Real-time chat, file sharing, and integrated feedback loops keep everyone on the same page.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line icon"></i>
+                    <h3>Advanced Analytics</h3>
+                    <p>Get deep insights into team performance and project bottlenecks with customizable reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Transform Your Workflow?</h2>
+            <p>Join thousands of successful teams using InnovateHub today.</p>
+            <a href="#signup" class="btn btn-primary btn-large">Sign Up Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2025 InnovateHub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navList = document.getElementById('navList');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
